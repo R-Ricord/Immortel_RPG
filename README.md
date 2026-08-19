@@ -15,9 +15,14 @@ L'histoire reprend les personnages et l'univers d'*Immortel*, tout en adaptant c
 - Système de combat au tour par tour
 - Attaques et compétences physiques
 - Gestion des PV et de l'endurance
-- Compétences avec coût en ressources
+- Compétences avec coût et récupération de ressources
 - Système de défense et de réduction des dégâts
 - Gestion de la victoire et de la défaite
+- Système de concentration pour récupérer de l'endurance
+- Combat contre plusieurs types d'ennemis
+- Combat de boss scénarisé
+- Choix narratifs avec conséquences différentes
+- Progression narrative jusqu'à la fin du prologue
 
 ## Technologies utilisées
 
@@ -30,6 +35,8 @@ L'histoire reprend les personnages et l'univers d'*Immortel*, tout en adaptant c
 
 Projet en cours de développement.
 
+Le premier palier de développement est terminé : le prologue est jouable jusqu'au départ de Kaya et Raiden vers Lumen.
+
 Les prochaines étapes prévues sont notamment :
 
 - amélioration du système de combat
@@ -39,3 +46,11 @@ Les prochaines étapes prévues sont notamment :
 - inventaire
 - sauvegarde de partie
 - interface graphique à terme
+
+## Lancer le jeu
+
+Depuis le dossier du projet :
+
+```bash
+python main.py
+```

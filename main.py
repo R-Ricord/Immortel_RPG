@@ -19,6 +19,7 @@ pv_chimere = 3500
 pv_max_chimere = 3500
 
 def attaquer(pv_ennemi, degats, nom_ennemi, pv_max_ennemi):
+    print()
     print(f"{nom_joueur} attaque {nom_ennemi} !")
     print(f"{nom_joueur} inflige {degats} points de dégâts à {nom_ennemi}.")
     pv_ennemi -= degats
@@ -73,6 +74,7 @@ while True:
     print("3 - Vérifier l'état de Kaya")
     if concentration_disponible:
         print("4 - Se Concentrer (gain : 50 END)")
+        print()
 
     choix = input("Ton choix : ")
     print()
@@ -147,6 +149,7 @@ while pv_ennemi > 0 and pv_joueur > 0:
     print("2 - Compétences")
     if concentration_disponible:
         print("3 - Se Concentrer (gain : 50 END)")
+    print()
 
     choix_combat = input("Ton choix : ")
 
@@ -255,8 +258,9 @@ print()
 
 input("Appuie sur Entrée pour que Kaya examine la stèle...")
 
+print()
 print("Kaya découvre une inscription en or, gravée en langue ancienne sur la stèle.")
-print("« Ces symboles sont les mêmes que ceux inscrits sur l'Obélisque de la Lumière. »")
+print("« Ces symboles ont l'air semblables à ceux inscrits sur l'Obélisque de la Lumière. »")
 
 cle_langue_ancienne = True
 
@@ -444,7 +448,7 @@ if pv_joueur <= 100:
     input("Appuie sur Entrée pour observer la scène...")
 
     print()
-    print("L'homme disparaît une fraction de seconde et réapparaît aussitôt juste derrière la Chimère.")
+    print("L'homme disparaît en une fraction de seconde et réapparaît aussitôt juste derrière la Chimère.")
     print("La bête se fige, mais aucune blessure apparente ne se manifeste.")
     print("Soudain, la Chimère se sépare en deux, puis s'effondre au sol, sans vie. Laissant s'élever un épais nuage de poussière.")
     print()
@@ -458,7 +462,68 @@ if pv_joueur <= 100:
     print("« Enchanté ! Je m'appelle Raiden. »")
     print()
 
-    input("Appuie sur Entrée pour accepter la main tendue et se relever...")
+    input("Appuie sur Entrée pour accepter la main tendue et te relever...")
 
     print()
-    print("« De...De même ! Je suis Kaya. »")
+    print("« De... De même ! Je suis Kaya. »")
+    print()
+    print("« Que fais-tu dans ces ruines Kaya ? Ce n'est pas un lieu pour une aventurière isolée. »")
+    print()
+    print("« Je pourrais te retourner la question, je croyais que ces ruines étaient méconnues de tous ! »")
+    print()
+    print("« C'est vrai ! Très peu de personnes sont conscientes de leur existence... »")
+    print("« Il se trouve que cela fait plusieurs années maintenant que je cherche à déchiffrer le secret des Obélisques... »")
+    print("« Cette stèle que tu as trouvée est la clé pour comprendre ce qui est inscrit sur celui de la Lumière, qui se trouve à Lumen. »")
+    print("« Il est malheureusement sous bonne garde et réservé à l'élite de l'armée de Lumen, je ne sais pas comment trouver le moyen d'y accéder... »")
+    print()
+
+    print("Que veux-tu faire ?")
+    print()
+    print("1 - Lui avouer que vous faites partie de l'armée de Lumen et l'arrêter pour le crime qu'il s'apprête à commettre")
+    print("2 - Lui avouer que vous faites partie de l'armée de Lumen et que vous pouvez l'aider à atteindre l'Obélisque de la Lumière")
+    print()
+
+    while True:
+        choix = input("Ton choix : ")
+        print()
+
+        if choix == "1":
+            print("« Je suis la capitaine de la 12ème division de l'armée de Lumen. »")
+            print("« Seul un regard empreint de lumière peut avoir accès à l'Obélisque ! »")
+            print("« Je me vois dans l'obligation de t'arrêter pour le crime que tu vas commettre ! »")
+            print("« Tu es en état d'arrestation Raiden ! »")
+            print()
+            print("« Si tu crois que je vais me rendre sans rien tenter Kaya, tu te trompes lourdement. »")
+            print("« Mets-toi en garde, cette fois-ci c'est moi ton ennemi ! »")
+            print()
+
+            input("Appuie sur Entrée pour engager le combat...")
+
+            print()
+            print("=== COMB...")
+            print()
+            print("À l'instant où Kaya pose la main sur le pommeau de son épée, Raiden disparaît, et le décor se mit à tourner dans tous les sens.")
+            print("Votre tête roule désormais sur le sol des Ruines d'Etheria...")
+            print()
+            print("GAME OVER.")
+            exit()
+
+        elif choix == "2":
+            print("« Il se trouve que je suis la capitaine de la 12ème division de l'armée de Lumen. »")
+            print("« Je suis ici car je pense que mes hauts dirigeants cachent le véritable message de l'Obélisque de la Lumière. »")
+            print("« J'ai des contacts qui pourront nous y donner accès discrètement. »")
+            print()
+            print("« Je ne sais pas si tu crois au destin Kaya, mais je pense qu'il vient de nous donner un sacré coup de pouce ! »")
+            print()
+
+            input("Appuie sur Entrée pour quitter les Ruines d'Etheria et voyager vers Lumen avec Raiden...")
+            break
+
+        else:
+            print()
+            print("Choix invalide.")
+
+print()
+print("=" * 50)
+print("                  À SUIVRE...")
+print("=" * 50)
