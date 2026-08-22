@@ -24,6 +24,18 @@ L'histoire reprend les personnages et l'univers d'*Immortel*, tout en adaptant c
 - Choix narratifs avec conséquences différentes
 - Progression narrative jusqu'à la fin du prologue
 
+## Compétences mises en pratique
+
+- Variables et types de données
+- Conditions avec `if`, `elif` et `else`
+- Boucles `while`
+- Création et utilisation de fonctions
+- Paramètres et valeurs de retour
+- Manipulation des entrées utilisateur avec `input`
+- Utilisation de conditions combinées
+- Organisation d'une logique de combat au tour par tour
+- Utilisation de Git et GitHub
+
 ## Technologies utilisées
 
 - Python
@@ -33,19 +45,21 @@ L'histoire reprend les personnages et l'univers d'*Immortel*, tout en adaptant c
 
 ## État du projet
 
-Projet en cours de développement.
+Le projet est en cours de développement.
 
-Le premier palier de développement est terminé : le prologue est jouable jusqu'au départ de Kaya et Raiden vers Lumen.
+Une première version jouable du prologue est terminée. Elle permet de suivre Kaya jusqu'à son départ avec Raiden vers Lumen et comprend déjà les principaux systèmes de jeu développés pendant cette première phase d'apprentissage.
 
-Les prochaines étapes prévues sont notamment :
+Le développement est actuellement mis en pause afin de poursuivre l'apprentissage du développement à travers d'autres projets avant de revenir sur Immortel avec de nouvelles compétences.
 
-- amélioration du système de combat
-- ajout de nouvelles compétences
-- progression de l'histoire
-- changement de personnage jouable
-- inventaire
-- sauvegarde de partie
-- interface graphique à terme
+## Prochaines évolutions
+
+- Amélioration du système de combat
+- Ajout de nouvelles compétences
+- Progression de l'histoire
+- Changement de personnage jouable
+- Inventaire
+- Sauvegarde de partie
+- Interface graphique à terme
 
 ## Lancer le jeu
 
@@ -53,4 +67,3 @@ Depuis le dossier du projet :
 
 ```bash
 python main.py
-```
